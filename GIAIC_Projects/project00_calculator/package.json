@@ -1,0 +1,23 @@
+{
+  "name": "00calculator",
+  "version": "1.0.0",
+  "description": "Simple Calculator in TypeScript",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "calculator": "./bin/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.11.28"
+  },
+  "dependencies": {
+    "inquirer": "^9.2.16"
+  }
+}

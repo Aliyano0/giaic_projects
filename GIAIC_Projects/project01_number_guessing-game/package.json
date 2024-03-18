@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/inquirer": "^9.0.7",
+    "chalk": "^5.3.0",
+    "inquirer": "^9.2.16"
+  },
+  "name": "01number_guessing_game",
+  "version": "1.0.0",
+  "type": "module",
+  "bin": {
+    "guessing_game": "./bin/index.js"
+  },
+  "description": "number guessing game in typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aliyan",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.28"
+  }
+}
