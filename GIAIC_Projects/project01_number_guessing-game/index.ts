@@ -3,11 +3,9 @@ import chalk from 'chalk';
 import inquirer from 'inquirer';
 
 
-
-let userInput = await inquirer.prompt([{message:"Guess the Number out of 10:", type: "number", name: "userInput"}]);
-
 const randomNumber = Math.floor(Math.random()*10)+1;
-console.log(randomNumber);
+
+let userInput = await inquirer.prompt([{message: "Guess the Number between 1 to 10:", type: "number", name: "userInput"}]);
 
 
 for (let score = 1; randomNumber === userInput.userInput; score++){
@@ -19,6 +17,6 @@ for (let score = 1; randomNumber === userInput.userInput; score++){
 }
 
 if(randomNumber !== userInput){
-  console.log((chalk.white.bgRed.bold)`Wrong answer. The correct number was: ${randomNumber}.`);
+  console.log(`Wrong answer. The correct number was: ${randomNumber}.`);
 }
 
