@@ -1,11 +1,10 @@
 {
   "dependencies": {
-    "@types/chalk": "^2.2.0",
     "@types/inquirer": "^9.0.7",
     "chalk": "^5.3.0",
     "inquirer": "^9.2.16"
   },
-  "name": "01number_guessing_game",
+  "name": "o0number_guessing_game",
   "version": "1.0.0",
   "type": "module",
   "bin": {
