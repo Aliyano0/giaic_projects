@@ -4,7 +4,7 @@
     "chalk": "^5.3.0",
     "inquirer": "^9.2.16"
   },
-  "name": "o0number_guessing_game",
+  "name": "o0number_guessing_game_",
   "version": "1.0.0",
   "type": "module",
   "bin": {

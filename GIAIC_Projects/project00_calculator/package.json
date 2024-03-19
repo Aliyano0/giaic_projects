@@ -1,6 +1,6 @@
 {
-  "name": "o0calculator",
-  "version": "1.0.0",
+  "name": "o0simple_calculator",
+  "version": "1.0.1",
   "description": "Simple Calculator in TypeScript",
   "main": "index.js",
   "type": "module",
