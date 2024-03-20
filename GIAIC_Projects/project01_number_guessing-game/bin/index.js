@@ -8,8 +8,8 @@ for (let score = 1; randomNumber === userInput.userInput; score++) {
         console.log((chalk.bgGreen) `Yayyy, you guessed the correct number: ${randomNumber}`);
         console.log(`Your current score is: ${score}`);
     }
-    userInput = await inquirer.prompt([{ message: "Correct!! You are doing great! Guess another number.", type: "number", name: "userInput" }]);
+    userInput = await inquirer.prompt([{ message: "You are doing great! Guess another number.", type: "number", name: "userInput" }]);
 }
 if (randomNumber !== userInput) {
-    console.log(`Wrong answer. The correct number was: ${randomNumber}.`);
+    console.log((chalk.bgRed) `Wrong answer. The correct number was: ${randomNumber}.`);
 }
