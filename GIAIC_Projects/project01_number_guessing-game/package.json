@@ -5,7 +5,7 @@
     "inquirer": "^9.2.16"
   },
   "name": "o0number_guessing_game_",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "type": "module",
   "bin": {
     "guessing_game": "./bin/index.js"
