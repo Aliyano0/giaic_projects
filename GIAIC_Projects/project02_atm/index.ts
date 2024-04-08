@@ -73,5 +73,5 @@ if (userPIN === userInfo.userPIN) {
 }
 
 else {
-  console.log("Please enter the correct ID or PIN.");
+  console.log("Please enter the correct PIN.");
 }

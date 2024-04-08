@@ -1,6 +1,6 @@
 {
   "name": "o0atm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Atm machine in TypeScript",
   "main": "index.js",
   "scripts": {
