@@ -73,6 +73,7 @@ else if (input.modify === "Delete") {
 
     let deletedTask: number = tasks.indexOf(input.deleteTask);
     tasks.splice(deletedTask, 1);
+    console.log(tasks);
     console.log("Task deleted successfully!");
   }
   else {
