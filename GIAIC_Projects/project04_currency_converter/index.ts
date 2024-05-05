@@ -20,12 +20,11 @@ let input = await inquirer.prompt([
 ]);
 
 
-let fromAmount = currencies[input.convert]
-let toAmount = currencies[input.convertInto]
-let amount = input.amount
-
-let baseAmount = amount / fromAmount // USD base currency
-let convertedAmount = baseAmount * toAmount
+let fromAmount = currencies[input.convert];
+let toAmount = currencies[input.convertInto];
+let amount = input.amount;
+let baseAmount = amount / fromAmount; // USD base currency
+let convertedAmount = baseAmount * toAmount;
  console.log(convertedAmount);
 
 
