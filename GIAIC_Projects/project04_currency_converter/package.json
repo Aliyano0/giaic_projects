@@ -1,5 +1,5 @@
 {
-  "name": "project04_currency_converter",
+  "name": "o0currency_converter",
   "version": "1.0.0",
   "description": "Currency converter in TypeScript using inquirer",
   "main": "index.js",
