@@ -100,7 +100,7 @@ while (condition) {
         ]);
         newStudent.enroll(input.course);
         console.log(`You are successfully enrolled in ${newStudent.course} now!`);
-        console.log(newStudent);
+        newStudent.showStatus();
         input = await inquirer.prompt([{ message: "Select an option", type: "list", name: "SecondOperation", choices: ["Pay Tuition Fees", "Show Status", "View Balance"] }]);
         // *** Pay Tuition Fees *** //
         if (input.SecondOperation === "Pay Tuition Fees") {
