@@ -178,7 +178,6 @@ while (condition) {
    }
  
 
-  // EK AUR SAWAL PUCH KR INQUIRER WALA USME FEES PAY KRNE KA AUR BAKI CHEEZON KA HONA HY AUR EK AUR take show status ke baad fee pay krne ka option dubara se ajaye.
   // Asking whether you want to add more students
   input = await inquirer.prompt([{ message: "Would you like to add more students?", type: "confirm", name: "condition"}]);
   condition = input.condition
