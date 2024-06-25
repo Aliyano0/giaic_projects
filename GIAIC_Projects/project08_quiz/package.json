@@ -1,11 +1,14 @@
 {
   "name": "o0quiz",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCQs Quiz using TypeScript and NPM Inquirer",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "quiz": "./bin/index.js"
   },
   "author": "Aliyan Aqeel",
   "license": "MIT",
