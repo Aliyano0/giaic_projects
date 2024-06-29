@@ -19,7 +19,7 @@ let healthPotionDropChance: number = 50; // Percentage
 
 // While loop condition
 let running: boolean = true;
-
+let enemiesDefeated: number = 0;
 // Welcome message //
 console.log(chalk.magenta(`Welcome to the Dungeon!`));
 
@@ -31,7 +31,7 @@ while (running) {
   let enemy: string = enemies[Math.floor(Math.random() * enemies.length)];  // Randomly selecting enemy from enemies array. 
   console.log(chalk.red(`\t# ${enemy} has appeared! #\n`));                 // Enemy appeared message.
 
-  while(enemyHealth > 0){  // Battle loop. this loop will run untill the player is dead.
+  while(enemyHealth > 0){  // Battle loop. this loop will run untill the enemy is dead.
 
     console.log(chalk.green(`\tYour HP: ${health}`));           // Player health.
     console.log(chalk.red(`\t${enemy}'s HP: ${enemyHealth}`));  // Enemy health.
@@ -62,7 +62,7 @@ while (running) {
     else if(input.firstStep === "\t2. Drink health potion"){
       if(numHealthPotions > 0){
 
-        if(health = 100){
+        if(health === 100){
           console.log(chalk.greenBright(`\n\t You have Max HP.`));
         }
         else if(health < 100){
@@ -110,6 +110,7 @@ while (running) {
   console.log("----------------------------------------------");
   console.log(chalk.green(` # ${enemy} was defeated! # `));
   console.log(chalk.green(` # You have ${health} HP left. # `));
+  enemiesDefeated++
   
   if(Math.floor(Math.random() * 100)+1 < healthPotionDropChance){
     numHealthPotions++;
@@ -133,6 +134,7 @@ while (running) {
 };
 console.log(`########################`);
 console.log(`# THANKS FOR PLAYING! #`);
+console.log(`# You defeated ${enemiesDefeated} enemies during your adventure. #`);
 console.log(`########################`);
 
 

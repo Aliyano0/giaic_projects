@@ -1,4 +1,4 @@
-#! /usr/bin/env node
+#! /usr/bin/env 
 // Aliyan Aqeel, 26th June, 2024.
 import inquirer from "inquirer";
 import chalk from "chalk";
@@ -14,6 +14,7 @@ let healthPotionHealAmount = 30; // Health potion's health
 let healthPotionDropChance = 50; // Percentage
 // While loop condition
 let running = true;
+let enemiesDefeated = 0;
 // Welcome message //
 console.log(chalk.magenta(`Welcome to the Dungeon!`));
 GAME: // Labeled the while loop for run option in the game.
@@ -22,7 +23,7 @@ GAME: // Labeled the while loop for run option in the game.
     let enemyHealth = Math.floor(Math.random() * maxEnemyHealth) + 1; // Randomizing enemy health between 1-75;
     let enemy = enemies[Math.floor(Math.random() * enemies.length)]; // Randomly selecting enemy from enemies array. 
     console.log(chalk.red(`\t# ${enemy} has appeared! #\n`)); // Enemy appeared message.
-    while (enemyHealth > 0) { // Battle loop. this loop will run untill the player is dead.
+    while (enemyHealth > 0) { // Battle loop. this loop will run untill the enemy is dead.
         console.log(chalk.green(`\tYour HP: ${health}`)); // Player health.
         console.log(chalk.red(`\t${enemy}'s HP: ${enemyHealth}`)); // Enemy health.
         // Getting options from the player.
@@ -45,7 +46,7 @@ GAME: // Labeled the while loop for run option in the game.
         // If player selects drink health potion.
         else if (input.firstStep === "\t2. Drink health potion") {
             if (numHealthPotions > 0) {
-                if (health = 100) {
+                if (health === 100) {
                     console.log(chalk.greenBright(`\n\t You have Max HP.`));
                 }
                 else if (health < 100) {
@@ -85,6 +86,7 @@ GAME: // Labeled the while loop for run option in the game.
     console.log("----------------------------------------------");
     console.log(chalk.green(` # ${enemy} was defeated! # `));
     console.log(chalk.green(` # You have ${health} HP left. # `));
+    enemiesDefeated++;
     if (Math.floor(Math.random() * 100) + 1 < healthPotionDropChance) {
         numHealthPotions++;
         console.log(chalk.blue(` # The ${enemy} dropped a health potion! # `));
@@ -105,4 +107,5 @@ GAME: // Labeled the while loop for run option in the game.
 ;
 console.log(`########################`);
 console.log(`# THANKS FOR PLAYING! #`);
+console.log(`# You defeated ${enemiesDefeated} enemies during your adventure. #`);
 console.log(`########################`);
