@@ -1,0 +1,19 @@
+{
+  "name": "o0_oop",
+  "version": "1.0.0",
+  "description": "Object Oriented Programming",
+  "main": "Program.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aliyan Aqeel",
+  "license": "MIT",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/prompt-sync": "^4.2.3",
+    "prompt-sync": "^4.2.0"
+  }
+}
