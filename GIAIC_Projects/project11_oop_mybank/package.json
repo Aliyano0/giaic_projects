@@ -1,0 +1,16 @@
+{
+  "name": "o0_oop_mybank",
+  "version": "1.0.0",
+  "description": "CLI Bank application in Typescript using Object Oriented Programming",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aliyan Aqeel",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/prompt-sync": "^4.2.3",
+    "prompt-sync": "^4.2.0"
+  }
+}
