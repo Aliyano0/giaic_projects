@@ -9,7 +9,7 @@ import PromptSync from "prompt-sync";
 const prompt = PromptSync();
 
 export class Program{
-  Main():void{
+  static Main():void{
     try{
 
     let input: string;
@@ -36,4 +36,4 @@ export class Program{
 
 
 
-const MyProgram = new Program().Main()
+Program.Main();
