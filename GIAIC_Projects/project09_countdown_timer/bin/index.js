@@ -2,8 +2,9 @@
 // Aliyan Aqeel, 7th July, 2024.
 import { differenceInSeconds } from "date-fns";
 import inquirer from "inquirer";
+// Will make it for the minutes as well in the future.
 // let input = await inquirer.prompt([
-//   {message: "Choose an option", type: "list", name: "timeFormat", choices:["Input time in seconds", "Input time in minutes"]}
+//   {message: "Choose an option", type: "list", name: "timeFormat", choices:["Input time in seconds", "Input time in minutes"]}  
 // ]);
 let input = await inquirer.prompt([
     { message: "Enter Duration in seconds", type: "number", name: "timeInSec",
